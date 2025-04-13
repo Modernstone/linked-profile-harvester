@@ -37,4 +37,9 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
+  define: {
+    // This is needed to make Firebase work correctly with Vite
+    'process.env': {},
+    'process.browser': true,
+  }
 }));
